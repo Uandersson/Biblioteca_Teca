@@ -12,8 +12,10 @@ class Livro:
         return self.disponibilidade
 
     def informacao_livro(self):
+        print("\n==========DADOS DOS LIVROS==========")
         print(f"Id : {self.id}")
         print(f"Nome : {self.titulo}")
         print(f"Autor : {self.autor}")
         print(f"Ano : {self.ano}")
         print(f"Páginas : {self.paginas}")
+        print(f"Disponibilidade : {self.disponibilidade}")
