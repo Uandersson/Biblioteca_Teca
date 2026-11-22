@@ -1,5 +1,5 @@
 class Livro:
-    def __init__(self, ide, titulo, autor, ano, pg):
+    def __init__(self, titulo, autor, ano, pg, ide=None):
         self.id = ide
         self.titulo = titulo
         self.autor = autor
@@ -12,10 +12,11 @@ class Livro:
         return self.disponibilidade
 
     def informacao_livro(self):
-        print("\n==========DADOS DOS LIVROS==========")
+        print("\n===========DADOS DOS LIVROS===========")
         print(f"Id : {self.id}")
         print(f"Nome : {self.titulo}")
         print(f"Autor : {self.autor}")
         print(f"Ano : {self.ano}")
         print(f"Páginas : {self.paginas}")
         print(f"Disponibilidade : {self.disponibilidade}")
+        print("\n=====================================\n")
